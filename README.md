@@ -2,7 +2,7 @@
 
 This repository contains the source code for the Tunisian Madridista website, a platform dedicated to all things related to Real Madrid Football Club. The website features various sections, each catering to different aspects of the club and its fans.
 
-# Demo Project
+# Uncompleted demo project (Some elements aren't appearing clearly, possibly due to hosting on the Netlify website.):
 ### https://tunisian-madridista.netlify.app/
 
 #### Click to see full GIF
