@@ -1,0 +1,1142 @@
+<html lang="en" class="scroll-smooth" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/styles.css">    
+    <link rel="stylesheet" href="custom-styles.css">    
+
+    <link rel="shortcut icon" href="img/logos/logo-icon.png"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tunisian Madridista</title>
+</head>
+<body> 
+    <section id="home" class="transition-all ease-in-out duration-700 h-screen relative">
+        <nav class="fixed w-full z-50 top-0 left-0 transition-all ease-out duration-700">
+            <div class="container-custom flex flex-wrap lg:flex-nowrap justify-between mx-auto p-4 ">
+                    <a href="#home" rel="noopener noreferrer">
+                        <img src="img/logos/main-logo.png" class="h-9 lg:h-12 mr-3" alt="Tunisian-Madridista-logo">
+                    </a>
+                <div class="flex lg:order-2">
+                    <button data-collapse-toggle="navbar-sticky" type="button" class="btnDrop inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                            <path stroke="currentColor" class="cursor-pointer" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="menu absolute start-0 top-16 lg:static bg-white lg:bg-transparent items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1 rounded-lg border lg:border-0  overflow-hidden border-b border-black" id="navbar-sticky">
+                <ul class="mr-0 flex flex-col p-4 lg:p-0 mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                    <li>
+                        <a href="#home" class="nav-item active" aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="#news" class="nav-item">News</a>
+                    </li>
+                    <li>
+                        <a href="#match" class="nav-item">Match</a>
+                    </li>
+                    <li>
+                        <a href="#team" class="nav-item">Team</a>
+                    </li>
+                    <li>
+                        <a href="#santiago-bernabéu" class="nav-item">Santiago Bernabéu </a>
+                    </li>
+                    <li>
+                        <a href="#fans" class="nav-item">Fans</a>
+                    </li>
+                    <li>
+                        <a href="#shop" class="nav-item">Shop</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="nav-item">Contact</a>
+                    </li>
+                    
+                    <div class="hidden xl:block">
+                        <button type="button" data-dropdown-toggle="language-dropdown-menu" class="langSection nav-item inline-flex">
+                            <svg class="w-5 h-5 mr-2 rounded-full border-2 border-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 3900 3900"><path fill="#b22234" d="M0 0h7410v3900H0z"/><path d="M0 450h7410m0 600H0m0 600h7410m0 600H0m0 600h7410m0 600H0" stroke="#fff" stroke-width="300"/><path fill="#3c3b6e" d="M0 0h2964v2100H0z"/><g fill="#fff"><g id="d"><g id="c"><g id="e"><g id="b"><path id="a" d="M247 90l70.534 217.082-184.66-134.164h228.253L176.466 307.082z"/><use xlink:href="#a" y="420"/><use xlink:href="#a" y="840"/><use xlink:href="#a" y="1260"/></g><use xlink:href="#a" y="1680"/></g><use xlink:href="#b" x="247" y="210"/></g><use xlink:href="#c" x="494"/></g><use xlink:href="#d" x="988"/><use xlink:href="#c" x="1976"/><use xlink:href="#e" x="2470"/></g></svg>
+                            English (US)
+                        </button>
+                        <div class="absolute z-50 my-4 text-base list-none rounded-lg shadow bg-white hidden" id="language-dropdown-menu">
+                            <ul class="py-2 font-medium" role="none">
+                            <li>
+                                <a href="#" class="lang-item" role="menuitem" language="english">
+                                <div class="langOptions inline-flex items-center">
+                                    <svg class="w-5 h-5 rounded-full mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-us" viewBox="0 0 512 512"><g fill-rule="evenodd"><g stroke-width="1pt"><path fill="#bd3d44" d="M0 0h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z" transform="scale(3.9385)"/><path fill="#fff" d="M0 10h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z" transform="scale(3.9385)"/></g><path fill="#192f5d" d="M0 0h98.8v70H0z" transform="scale(3.9385)"/><path fill="#fff" d="M8.2 3l1 2.8H12L9.7 7.5l.9 2.7-2.4-1.7L6 10.2l.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7L74 8.5l-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 7.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 24.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 21.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 38.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 35.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 52.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 49.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 66.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 63.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9z" transform="scale(3.9385)"/></g></svg>              
+                                    English (US)
+                                </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="lang-item" role="menuitem" language="Dutch">
+                                <div class="langOptions inline-flex items-center">
+                                    <svg class="w-5 h-5 rounded-full mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-de" viewBox="0 0 512 512"><path fill="#ffce00" d="M0 341.3h512V512H0z"/><path d="M0 0h512v170.7H0z"/><path fill="#d00" d="M0 170.7h512v170.6H0z"/></svg>
+                                    Dutch
+                                </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="lang-item" role="menuitem" language="Italian">
+                                <div class="langOptions inline-flex items-center">
+                                    <svg class="w-5 h-5 rounded-full mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-it" viewBox="0 0 512 512"><g fill-rule="evenodd" stroke-width="1pt"><path fill="#fff" d="M0 0h512v512H0z"/><path fill="#009246" d="M0 0h170.7v512H0z"/><path fill="#ce2b37" d="M341.3 0H512v512H341.3z"/></g></svg>              
+                                    Italian
+                                </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="lang-item" role="menuitem" language="Chinese">
+                                <div class="langOptions inline-flex items-center">
+                                    <svg class="w-5 h-5 rounded-full mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="flag-icon-css-cn" viewBox="0 0 512 512"><defs><path id="a" fill="#ffde00" d="M1-.3L-.7.8 0-1 .6.8-1-.3z"/></defs><path fill="#de2910" d="M0 0h512v512H0z"/><use width="30" height="20" transform="matrix(76.8 0 0 76.8 128 128)" xlink:href="#a"/><use width="30" height="20" transform="rotate(-121 142.6 -47) scale(25.5827)" xlink:href="#a"/><use width="30" height="20" transform="rotate(-98.1 198 -82) scale(25.6)" xlink:href="#a"/><use width="30" height="20" transform="rotate(-74 272.4 -114) scale(25.6137)" xlink:href="#a"/><use width="30" height="20" transform="matrix(16 -19.968 19.968 16 256 230.4)" xlink:href="#a"/></svg>
+                                    中文 (繁體)
+                                </div>
+                                </a>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                </ul>
+                </div>
+            </div>
+
+        </nav>
+
+        <main>
+            <div class="relative" data-carousel="slide" data-ride="carousel" data-carousel="static" data-carousel-interval="4000">
+
+                <div class="relative h-screen overflow-hidden" >
+
+                    <div class="hidden duration-500 ease-in-out" data-carousel-item>
+                        <div class="absolute inset-0 bg-[url('img/carrousel-pic/main-1.png')] bg-cover bg-center"></div>
+                        <div class="absolute inset-0 z-10 after:bg-gradient-to-t from-[rgba(0,0,0,0.25)] to-[rgba(250,190,3,.5)] after:absolute after:inset-0 content-overlay"></div>        
+                        <div class=" bg-transparent relative z-10  block pt-96 container-custom mx-auto text-white text-center lg:text-start  ">
+                            <h6 class="md:mx-24 tracking-wide">Welcome to the footbal family!</h6>    
+                            <h1 class="md:mx-24 text-6xl lg:text-8xl font-extrabold uppercase">Tunisian madridista</h1>    
+                        </div>
+                    </div>
+
+                    <div class="hidden duration-500 ease-in-out" data-carousel-item>
+                        <div class="absolute inset-0 bg-[url('img/carrousel-pic/main-2.jpg')] bg-cover bg-center"></div>
+                        <div class="absolute inset-0 z-10 after:bg-gradient-to-t from-[rgba(0,0,0,0.25)] to-[rgba(250,190,3,.5)] after:absolute after:inset-0 content-overlay"></div>        
+                        <div class=" bg-transparent relative z-10  block pt-96 container-custom mx-auto text-white text-center lg:text-start  ">
+                            <img src="img/carrousel-pic/text-main-1.png" class="block mx-auto lg:mx-0" alt="realMadridChampions14">
+                            <h6 class="md:mx-24">Relive, from within, the twentieth Copa del Rey in our history.</h6>    
+                            <button class="bg-amber-400 text-black px-5 py-1.5 rounded-md  mt-3 block mx-auto lg:ml-72 hover:bg-amber-500">View</button>
+                        </div>
+                    </div>
+
+                    <div class="hidden duration-500 ease-in-out" data-carousel-item>
+                        <div class="absolute inset-0 bg-[url('img/carrousel-pic/main-3.jpg')] bg-cover bg-center"></div>
+                        <div class="absolute inset-0 z-10 after:bg-gradient-to-t from-[rgba(0,0,0,0.25)] to-[rgba(250,190,3,.5)] after:absolute after:inset-0 content-overlay"></div>         
+                        <div class="relative bg-transparent space-y-5 z-10  block pt-96 container-custom mx-auto text-white text-center lg:text-start  ">
+                            <h1 class="md:mx-24 text-5xl md:text-6xl font-bold">Third kit 2023/24</h1>  
+                            <h6 class="md:mx-28 tracking-wide">It is black with yellow details. Discover it!</h6>   
+                            <button class="bg-amber-400 text-black px-5 py-2 rounded-md mt-3  lg:ml-28 hover:bg-neutral-800 hover:text-white hover:border hover:border-amber-400">Watch now</button>
+                            <button class="bg-black text-amber-400 px-5 py-2 rounded-md mt-3  lg:ml-6 hover:bg-neutral-800 hover:text-white hover:border hover:border-amber-400 border border-amber-400">Buy from</button>       
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                </div>
+
+                <button type="button" class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+                    <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+                        <svg class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    </span>
+                </button>
+
+                <button type="button" class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                    <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 0 group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+                        <svg class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </span>
+                </button>
+            </div>
+        </main>
+    </section>
+
+    <section id="news" class="transition-all ease-in-out duration-700 h-auto py-24 lg:h-auto container-custom mx-auto grid grid-cols-1 lg:grid-cols-2 lg:space-x-10 items-center px-6 lg:px-0  ">
+        <div class="space-y-3 mt-4 lg:m-0 ">
+            <h2 class="text-3xl md:text-5xl uppercase lg:-mt-12  ">
+                Most <span class="text-amber-400 ">Sensational</span> News of The Week <hr class="border border-amber-400 w-56 md:w-96">
+            </h2>
+            <p class="text-gray-500">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+            </p>
+            <aside>
+                <div class="relative lg:-mb-9">
+                    <img src="img/news/main-news.png" alt="PerezPicture" class="opacity-90">
+                    <div class="absolute inset-0 after:bg-gradient-to-b from-[rgba(13,12,12,0.34)] to-[rgba(21,21,21,0.5)] after:absolute after:inset-0 content-overlay"></div>        
+                    <span class="absolute top-0 mt-8 bg-amber-400 px-2 uppercase font-semibold ">main story</span>
+                    <h6 class="text-gray-200 md:text-2xl w-auto absolute bottom-16 start-4 ">Real Madrid respond to rumours Florentino Perez will step down as president</h6>
+                    <p class="absolute bottom-1 end-2 text-gray-400">27 minutes ago</p>
+                    <div class="absolute inset-0 hover:bg-gradient-to-b from-[rgba(107,107,107,0.34)] to-[rgba(21,21,21,0.5)] after:absolute after:inset-0 content-overlay"></div>        
+                </div>
+            </aside>
+        </div> 
+        <div class=" mt-5 md:m-0 ">
+            <h2 class="uppercase text-4xl font-semibold text-gray-600 mx-5 my-2 md:mx-0 lg:my-0">Latest news</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                <div class="card">
+                    <div class="relative">
+                        <img src="img/news/news-1.png" class="relative" alt="mbappe">
+                        <div class="absolute inset-0 hover:bg-gradient-to-b from-[rgba(107,107,107,0.34)] to-[rgba(21,21,21,0.5)] after:absolute after:inset-0 content-overlay"></div> 
+                    </div>
+                    <p class="text-gray-400 m-1">27 minutes ago</p>
+                    <span class="font-semibold text-gray-600 ">Lorem Ipsum is simply dummy text of the printing</span>
+                    <p class="relative text-end text-gray-400">27 minutes ago</p>
+                </div>                
+                <div class="card">
+                    <div class="relative">
+                        <img src="img/news/news-1.png" class="relative" alt="mbappe">
+                        <div class="absolute inset-0 hover:bg-gradient-to-b from-[rgba(107,107,107,0.34)] to-[rgba(21,21,21,0.5)] after:absolute after:inset-0 content-overlay"></div> 
+                    </div>
+                    <p class="text-gray-400 m-1">27 minutes ago</p>
+                    <span class="font-semibold text-gray-600 ">Lorem Ipsum is simply dummy text of the printing</span>
+                    <p class="relative text-end text-gray-400">27 minutes ago</p>
+                </div>
+                <div class="card">
+                    <div class="relative">
+                        <img src="img/news/news-1.png" class="relative" alt="mbappe">
+                        <div class="absolute inset-0 hover:bg-gradient-to-b from-[rgba(107,107,107,0.34)] to-[rgba(21,21,21,0.5)] after:absolute after:inset-0 content-overlay"></div> 
+                    </div>
+                    <p class="text-gray-400 m-1">27 minutes ago</p>
+                    <span class="font-semibold text-gray-600 ">Lorem Ipsum is simply dummy text of the printing</span>
+                    <p class="relative text-end text-gray-400">27 minutes ago</p>
+                </div>
+                <div class="card">
+                    <div class="relative">
+                        <img src="img/news/news-1.png" class="relative" alt="mbappe">
+                        <div class="absolute inset-0 hover:bg-gradient-to-b from-[rgba(107,107,107,0.34)] to-[rgba(21,21,21,0.5)] after:absolute after:inset-0 content-overlay"></div> 
+                    </div>
+                    <p class="text-gray-400 m-1">27 minutes ago</p>
+                    <span class="font-semibold text-gray-600 ">Lorem Ipsum is simply dummy text of the printing</span>
+                    <p class="relative text-end text-gray-400">27 minutes ago</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="match" class="transition-all ease-in-out duration-700 h-auto py-24 grid grid-cols-1 container-custom mx-auto items-center px-6 lg:px-0 ">
+            <h1 class="uppercase font-semibold text-2xl">Match schedule</h1>
+            <p class="text-gray-400">View all matches +</p>
+        <div class="my-16 relative bg-fixed flex space-x-1 grid-cols-1 overflow-x-auto touch-auto overflow-hidden">
+            <div class="absolute inset-0 bg-[url('img/match-pic/pic-1.png')] bg-cover bg-no-repeat bg-center opacity-10"></div>
+            <div class="match-card">
+                <div class="relative flex space-x-3 w-auto">
+                    <img src="img/match-pic/original-logo.png" class="w-14 h-20" alt="realmadridIcon">
+                    <img src="img/match-pic/enemy-logo.png" class="w-20 h-20 " alt="enemy-logo"> 
+                    <h3 class="text-xl font-extrabold text-amber-400 absolute end-0 bottom-1">5:1 W</h3>   
+                </div>
+                <hr class="border border-amber-400 w-full">
+                <div class="relative block w-auto">
+                    <h3 class="text-base font-semibold">Real Madrid vs Anonymous</h3>
+                    <p class="text-gray-400">La Liga</p>
+                    <h6 class="text-sm">Sunday 99th January, 2023
+                    <h7 class="block"><span class="font-semibold">8:00 PM</span>, Santiago Bernabeu</h7></h6>
+                </div>
+                <button class="bg-amber-400 px-4 py-2 text-white hover:bg-amber-500 hover:text-black z-10">More ➤</button>
+            </div>
+            <div class="match-card">
+                <div class="relative flex space-x-3 w-auto">
+                    <img src="img/match-pic/original-logo.png" class="w-14 h-20" alt="realmadridIcon">
+                    <img src="img/match-pic/enemy-logo.png" class="w-20 h-20 " alt="enemy-logo"> 
+                    <h3 class="text-xl font-extrabold text-amber-400 absolute end-0 bottom-1">5:1 W</h3>   
+                </div>
+                <hr class="border border-amber-400 w-full">
+                <div class="relative block w-auto">
+                    <h3 class="text-base font-semibold">Real Madrid vs Anonymous</h3>
+                    <p class="text-gray-400">La Liga</p>
+                    <h6 class="text-sm">Sunday 99th January, 2023
+                    <h7 class="block"><span class="font-semibold">8:00 PM</span>, Santiago Bernabeu</h7></h6>
+                </div>
+                <button class="bg-amber-400 px-4 py-2 text-white hover:bg-amber-500 hover:text-black z-10">More ➤</button>
+            </div>
+            <div class="match-card">
+                <div class="relative flex space-x-3 w-auto">
+                    <img src="img/match-pic/original-logo.png" class="w-14 h-20" alt="realmadridIcon">
+                    <img src="img/match-pic/enemy-logo.png" class="w-20 h-20 " alt="enemy-logo"> 
+                    <h3 class="text-xl font-extrabold text-amber-400 absolute end-0 bottom-1">5:1 W</h3>   
+                </div>
+                <hr class="border border-amber-400 w-full">
+                <div class="relative block w-auto">
+                    <h3 class="text-base font-semibold">Real Madrid vs Anonymous</h3>
+                    <p class="text-gray-400">La Liga</p>
+                    <h6 class="text-sm">Sunday 99th January, 2023
+                    <h7 class="block"><span class="font-semibold">8:00 PM</span>, Santiago Bernabeu</h7></h6>
+                </div>
+                <button class="bg-amber-400 px-4 py-2 text-white hover:bg-amber-500 hover:text-black z-10">More ➤</button>
+            </div>
+            <div class="match-card">
+                <div class="relative flex space-x-3 w-auto">
+                    <img src="img/match-pic/original-logo.png" class="w-14 h-20" alt="realmadridIcon">
+                    <img src="img/match-pic/enemy-logo.png" class="w-20 h-20 " alt="enemy-logo"> 
+                    <h3 class="text-xl font-extrabold text-amber-400 absolute end-0 bottom-1">5:1 W</h3>   
+                </div>
+                <hr class="border border-amber-400 w-full">
+                <div class="relative block w-auto">
+                    <h3 class="text-base font-semibold">Real Madrid vs Anonymous</h3>
+                    <p class="text-gray-400">La Liga</p>
+                    <h6 class="text-sm">Sunday 99th January, 2023
+                    <h7 class="block"><span class="font-semibold">8:00 PM</span>, Santiago Bernabeu</h7></h6>
+                </div>
+                <button class="bg-amber-400 px-4 py-2 text-white hover:bg-amber-500 hover:text-black z-10">More ➤</button>
+            </div>
+            <div class="match-card">
+                <div class="relative flex space-x-3 w-auto">
+                    <img src="img/match-pic/original-logo.png" class="w-14 h-20" alt="realmadridIcon">
+                    <img src="img/match-pic/enemy-logo.png" class="w-20 h-20 " alt="enemy-logo"> 
+                    <h3 class="text-xl font-extrabold text-amber-400 absolute end-0 bottom-1">5:1 W</h3>   
+                </div>
+                <hr class="border border-amber-400 w-full">
+                <div class="relative block w-auto">
+                    <h3 class="text-base font-semibold">Real Madrid vs Anonymous</h3>
+                    <p class="text-gray-400">La Liga</p>
+                    <h6 class="text-sm">Sunday 99th January, 2023
+                    <h7 class="block"><span class="font-semibold">8:00 PM</span>, Santiago Bernabeu</h7></h6>
+                </div>
+                <button class="bg-amber-400 px-4 py-2 text-white hover:bg-amber-500 hover:text-black z-10">More ➤</button>
+            </div>
+            <div class="match-card">
+                <div class="relative flex space-x-3 w-auto">
+                    <img src="img/match-pic/original-logo.png" class="w-14 h-20" alt="realmadridIcon">
+                    <img src="img/match-pic/enemy-logo.png" class="w-20 h-20 " alt="enemy-logo"> 
+                    <h3 class="text-xl font-extrabold text-amber-400 absolute end-0 bottom-1">5:1 W</h3>   
+                </div>
+                <hr class="border border-amber-400 w-full">
+                <div class="relative block w-auto">
+                    <h3 class="text-base font-semibold">Real Madrid vs Anonymous</h3>
+                    <p class="text-gray-400">La Liga</p>
+                    <h6 class="text-sm">Sunday 99th January, 2023
+                    <h7 class="block"><span class="font-semibold">8:00 PM</span>, Santiago Bernabeu</h7></h6>
+                </div>
+                <button class="bg-amber-400 px-4 py-2 text-white hover:bg-amber-500 hover:text-black z-10">More ➤</button>
+            </div>
+        </div>
+
+    </section>
+    
+    <section id="team" class="transition-all ease-in-out duration-700 h-auto pt-24 grid grid-cols-1 mx-auto items-center px-6 md:pl-0 ">
+        <div class=" container-custom mx-auto">
+            <h1 class="uppercase font-semibold text-2xl">RMA players</h1>
+            <p class="text-gray-400">View all players +</p>             
+        </div>
+        <div class="relative my-16 bg-gray-200 h-auto grid grid-cols-2 lg:grid-cols-5 space-y-10 lg:space-y-0">
+            
+            <div class="relative col-span-1 lg:col-span-2">            
+            <img src="img/players/modric-display1.png" class="mt-5 ml-6 lg:ml-0 lg:-mt-10 z-10" alt="lukaModric"> 
+            </div>
+
+            <div class="relative col-span-1 p-5 pb-0 space-y-3">
+                <div class="absolute h-full lg:border-l lg:border-amber-400 -mt-5 -start-8"></div>
+                <span class="font-thin text-5xl text-amber-400">#10</span>
+                <h1 class="font-bold text-5xl xl:text-6xl">Luka Modric</h1>
+                <h3 class="uppercase font-thin text-xl pb-1 text-gray-400">midfielder</h3>
+                <p class="text-xs md:text-sm lg:text-md">Born in 1985 in Croatia, Luka Modrić is a celebrated football maestro,
+                    renowned for his impeccable skills and influential presence on the pitch.</p>
+                <button class="bg-amber-400 px-4 py-2 text-white hover:bg-amber-500 hover:text-black z-10 ">More ➤</button>
+            </div>
+
+            <div class="relative col-span-1 p-5 pb-0 space-y-10 lg:border-l lg:border-gray-400">
+                <h3 class="uppercase font-bold text-2xl">2021-22 stats</h3>
+                <div class="space-y-3">
+                    <div class="flex justify-between border-b border-gray-300 ">
+                        <h6 class="players-details">Games played</h6>
+                        <span class="text-sm font-bold">40</span>
+                    </div>
+                    <div class="flex justify-between border-b border-gray-300 ">
+                        <h6 class="players-details">Minutes played</h6>
+                        <span class="text-sm font-bold">1,500</span>
+                    </div>
+                    <div class="flex justify-between border-b border-gray-300 ">
+                        <h6 class="players-details">Starting XI</h6>
+                        <span class="text-sm font-bold">20</span>
+                    </div>
+                    <div class="flex justify-between border-b border-gray-300 ">
+                        <h6 class="players-details">Goals</h6>
+                        <span class="text-sm font-bold">12</span>
+                    </div>
+                    <div class="flex justify-between border-b border-gray-300 ">
+                        <h6 class="players-details">Assists</h6>
+                        <span class="text-sm font-bold">26</span>
+                    </div>
+                </div>
+                <div class="flex justify-around space-x-3">
+                    <div class="text-center space-y-5">
+                        <span class="font-thin text-sm xl:text-md border-2 border-amber-400 rounded-full px-2 py-4 xl:px-3 xl:py-5 ">26%</span>
+                        <h6 class="players-details">Conversion</h6>
+                    </div>
+                    <div class="text-center space-y-5">
+                        <span class="font-thin text-sm xl:text-md border-2 border-amber-400 rounded-full px-2 py-4 xl:px-3 xl:py-5 ">26%</span>
+                        <h6 class="players-details">Passing</h6>
+                    </div>
+                    <div class="text-center space-y-5">
+                        <span class="font-thin text-sm xl:text-md border-2 border-amber-400 rounded-full px-2 py-4 xl:px-3 xl:py-5 ">26%</span>
+                        <h6 class="players-details">Tackles</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative col-span-1 h-auto">
+                <div class="relative lg:border-l lg:border-gray-400 overflow-y-auto h-100 xl:h-120 bg-white cursor-pointer ">
+                    <div class="scroll-item active-player relative flex justify-evenly md:justify-around items-center px-5 h-auto overflow-hidden border-b border-gray-400">
+                        <img src="img/players/modric-22.png" class="w-20 mt-1" alt="modric">
+                        <div>
+                            <h1 class="font-bold text-md md:text-xl">Luka Modric</h1>
+                            <p class="text-gray-400 uppercase text-xs">@ <span class="font-extrabold">10</span> | <span>midfielder</span></p>
+                        </div>
+                    </div>
+                    <div class="scroll-item relative flex justify-evenly md:justify-around items-center pl-7 pr-2 h-auto overflow-hidden border-b border-gray-400">
+                        <img src="img/players/courtois-22.png" class="w-20 mt-1" alt="courtois">
+                        <div class="ml-0 xl::ml-8">
+                            <h1 class="font-bold text-md md:text-xl">Thibaut Courtois</h1>
+                            <p class="text-gray-400 uppercase text-xs">@ <span class="font-extrabold">1</span> |  <span>goalkeeper</span></p>
+                        </div>
+                    </div>
+                    <div class="scroll-item relative flex justify-evenly md:justify-around items-center px-5 h-auto overflow-hidden border-b border-gray-400">
+                        <img src="img/players/modric-22.png" class="w-20 mt-1" alt="modric">
+                        <div>
+                            <h1 class="font-bold text-md md:text-xl">Luka Modric</h1>
+                            <p class="text-gray-400 uppercase text-xs">@ <span class="font-extrabold">10</span> | <span>midfielder</span></p>
+                        </div>
+                    </div>
+                    <div class="scroll-item relative flex justify-evenly md:justify-around items-center px-5 h-auto overflow-hidden border-b border-gray-400">
+                        <img src="img/players/modric-22.png" class="w-20 mt-1" alt="modric">
+                        <div>
+                            <h1 class="font-bold text-md md:text-xl">Luka Modric</h1>
+                            <p class="text-gray-400 uppercase text-xs">@ <span class="font-extrabold">10</span> | <span>midfielder</span></p>
+                        </div>
+                    </div>
+                    <div class="scroll-item relative flex justify-evenly md:justify-around items-center px-5 h-auto overflow-hidden border-b border-gray-400">
+                        <img src="img/players/modric-22.png" class="w-20 mt-1" alt="modric">
+                        <div>
+                            <h1 class="font-bold text-md md:text-xl">Luka Modric</h1>
+                            <p class="text-gray-400 uppercase text-xs">@ <span class="font-extrabold">10</span> | <span>midfielder</span></p>
+                        </div>
+                    </div>
+                    <div class="scroll-item relative flex justify-evenly md:justify-around items-center px-5 h-auto overflow-hidden border-b border-gray-400">
+                        <img src="img/players/modric-22.png" class="w-20 mt-1" alt="modric">
+                        <div>
+                            <h1 class="font-bold text-md md:text-xl">Luka Modric</h1>
+                            <p class="text-gray-400 uppercase text-xs">@ <span class="font-extrabold">10</span> | <span>midfielder</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="stats" class="transition-all ease-in-out duration-700 relative h-auto pb-24 grid grid-cols-1 container-custom mx-auto items-center px-5 lg:px-0">
+        <h1 class="uppercase font-semibold text-2xl">Players stats</h1>
+        <p class="text-gray-400">View all player stats +</p>
+        <div class=" grid grid-cols-2 lg:grid-cols-4 mr-10">
+            <div class="col-span-1 px-4 space-y-3 ">
+                <div class="scroll-item relative flex justify-evenly md:justify-between items-center h-auto overflow-hidden border-b border-gray-400">
+                    <div>
+                        <p class="text-gray-400 uppercase text-xs">Goals</p>
+                        <h1 class="font-bold text-md md:text-xl">Luka Modric</h1>
+                        <p class="text-amber-400 uppercase mt-1">10</p>
+                    </div>
+                    <img src="img/players/modric-22.png" class="w-20 mt-1" alt="lukaModric">
+                </div>
+                <div class="space-y-3">
+                    <div class="flex justify-between border-b border-gray-300 ">
+                        <h6 class="players-names">Vede Valverde</h6>
+                        <span class="text-sm font-bold text-amber-400">40</span>
+                    </div>
+                    <div class="flex justify-between border-b border-gray-300 ">
+                        <h6 class="players-names">Vede Valverde</h6>
+                        <span class="text-sm font-bold text-amber-400">40</span>
+                    </div>
+                    <div class="flex justify-between border-b border-gray-300 ">
+                        <h6 class="players-names">Vede Valverde</h6>
+                        <span class="text-sm font-bold text-amber-400">40</span>
+                    </div>
+                    <div class="flex justify-between border-b border-gray-300 ">
+                        <h6 class="players-names">Vede Valverde</h6>
+                        <span class="text-sm font-bold text-amber-400">40</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-1 space-y-3 px-8 lg:border-l lg:border-gray-400">
+                <div class="scroll-item relative flex justify-evenly md:justify-between items-center h-auto overflow-hidden border-b border-gray-400">
+                    <div>
+                        <p class="text-gray-400 uppercase text-xs">Assists</p>
+                        <h1 class="font-bold text-md md:text-xl">Luka Modric</h1>
+                        <p class="text-amber-400 uppercase mt-1">10</p>
+                    </div>
+                    <img src="img/players/modric-22.png" class="w-20 mt-1" alt="lukaModric">
+                </div>
+                <div class="space-y-3">
+                    <div class="flex justify-between border-b border-gray-300 ">
+                        <h6 class="players-names">Vede Valverde</h6>
+                        <span class="text-sm font-bold text-amber-400">40</span>
+                    </div>
+                    <div class="flex justify-between border-b border-gray-300 ">
+                        <h6 class="players-names">Vede Valverde</h6>
+                        <span class="text-sm font-bold text-amber-400">40</span>
+                    </div>
+                    <div class="flex justify-between border-b border-gray-300 ">
+                        <h6 class="players-names">Vede Valverde</h6>
+                        <span class="text-sm font-bold text-amber-400">40</span>
+                    </div>
+                    <div class="flex justify-between border-b border-gray-300 ">
+                        <h6 class="players-names">Vede Valverde</h6>
+                        <span class="text-sm font-bold text-amber-400">40</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-1 space-y-3 px-8 lg:border-l lg:border-gray-400">
+                <div class="scroll-item relative flex justify-evenly md:justify-between items-center h-auto overflow-hidden border-b border-gray-400">
+                    <div>
+                        <p class="text-gray-400 uppercase text-xs">Passes</p>
+                        <h1 class="font-bold text-md md:text-xl">Luka Modric</h1>
+                        <p class="text-amber-400 uppercase mt-1">10</p>
+                    </div>
+                    <img src="img/players/modric-22.png" class="w-20 mt-1" alt="lukaModric">
+                </div>
+                <div class="space-y-3">
+                    <div class="flex justify-between border-b border-gray-300 ">
+                        <h6 class="players-names">Vede Valverde</h6>
+                        <span class="text-sm font-bold text-amber-400">40</span>
+                    </div>
+                    <div class="flex justify-between border-b border-gray-300 ">
+                        <h6 class="players-names">Vede Valverde</h6>
+                        <span class="text-sm font-bold text-amber-400">40</span>
+                    </div>
+                    <div class="flex justify-between border-b border-gray-300 ">
+                        <h6 class="players-names">Vede Valverde</h6>
+                        <span class="text-sm font-bold text-amber-400">40</span>
+                    </div>
+                    <div class="flex justify-between border-b border-gray-300 ">
+                        <h6 class="players-names">Vede Valverde</h6>
+                        <span class="text-sm font-bold text-amber-400">40</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-1 space-y-3 px-8 lg:border-l lg:border-gray-400">
+                <div class="scroll-item relative flex justify-evenly md:justify-between items-center h-auto overflow-hidden border-b border-gray-400">
+                    <div>
+                        <p class="text-gray-400 uppercase text-xs">Clean sheets</p>
+                        <h1 class="font-bold text-md md:text-xl">Thibaut Courtois</h1>
+                        <p class="text-amber-400 uppercase mt-1">10</p>
+                    </div>
+                    <img src="img/players/courtois-22.png" class="w-20 mt-1" alt="lukaModric">
+                </div>
+                <div class="space-y-3">
+                    <div class="flex justify-between border-b border-gray-300 ">
+                        <h6 class="players-names">Vede Valverde</h6>
+                        <span class="text-sm font-bold text-amber-400">40</span>
+                    </div>
+                    <div class="flex justify-between border-b border-gray-300 ">
+                        <h6 class="players-names">Vede Valverde</h6>
+                        <span class="text-sm font-bold text-amber-400">40</span>
+                    </div>
+                    <div class="flex justify-between border-b border-gray-300 ">
+                        <h6 class="players-names">Vede Valverde</h6>
+                        <span class="text-sm font-bold text-amber-400">40</span>
+                    </div>
+                    <div class="flex justify-between border-b border-gray-300 ">
+                        <h6 class="players-names">Vede Valverde</h6>
+                        <span class="text-sm font-bold text-amber-400">40</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ads" class="transition-all ease-in-out duration-700 relative h-auto pb-24 grid grid-cols-1 mx-auto items-center px-5 lg:px-0">
+        <div class="relative grid grid-cols-1  lg:grid-cols-4 w-full h-52 bg-gray-100 overflow-hidden">
+            <img src="img/match-pic/pic-1.png" alt="Tunisian-Madridista-logo" class="absolute w-20 md:w-32 ">
+            <div class="lg:p-10 lg:pt-16 text-center space-y-2 col-span-2 lg:col-span-2">
+                <h1 class="text-amber-400 uppercase font-bold text-xl md:text-3xl lg:text-5xl">Renew your wardrobe</h1>
+                <a href="#shop"><button class="bg-amber-400 px-4 py-2 text-white hover:bg-amber-500 hover:text-black z-10">View Shop ➤</button></a>
+            </div>
+            <div class="relative w-auto flex items-end col-span-2 lg:col-span-2">
+                <div class="absolute inset-0 bg-[url('img/shop-pic/brush-bg.png')] lg:-start-40 lg:-top-24 bg-cover bg-center lg:-rotate-45"></div>
+                <div class="flex w-full justify-around lg:justify-center ">
+                    <img src="img/players/courtois-22.png" class="relative w-32 mt-5 lg:w-40 lg:mt-10" alt="courtois">
+                    <img src="img/players/modric-22.png" class="relative w-40 lg:w-52" alt="lukamodric">
+                    <img src="img/players/courtois-22.png" class="relative w-32 mt-5 lg:w-40 lg:mt-10" alt="courtois">
+    
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="santiago-bernabéu" class="transition-all ease-in-out duration-700 relative py-24 h-auto grid grid-cols-1 container-custom mx-auto items-center px-5 lg:px-0">
+        <h1 class="uppercase font-semibold text-2xl">Santiago bernabéu stadium</h1>
+        <p class="text-gray-400">View Stadium +</p>   
+        <div class="relative w-full text-center my-5">
+            <video class="w-full relative" >
+                <source src="vid/vid-1.mp4" type="video/mp4">
+            </video>
+
+            <div class="gradient absolute inset-0 after:bg-gradient-to-t from-[rgba(8,7,7,0.86)] to-[rgba(0,0,0,0.5)] after:absolute after:inset-0 content-overlay"></div>        
+    
+            <div class="play absolute -translate-x-2/4 -translate-y-2/4 left-2/4 top-2/4 cursor-pointer bg-gray-800 hover:bg-gray-500 transition-all ease-linear duration-150 rounded-full p-3">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-16 h-16 md:w-24 md:h-24">
+                    <path class="cursor-pointer" stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
+                </svg>           
+            </div>
+    
+            <h1 class="quote1 absolute text-4xl md:text-6xl -translate-x-2/4 -translate-y-32 md:-translate-y-32 lg:-translate-y-2/4 left-2/4 top-44 text-white w-full z-10">BUILDING A LEGEND</h1>
+    
+            <div class="quote2 absolute -translate-x-2/4 lg:-translate-y-2/4 left-2/4 bottom-0 space-y-4">
+                <h6 class="text-xs md:text-xl text-gray-200 z-10">A setting full of emotions that will define Real Madrid's future, the greatest stadium in the world."</h6>
+                <h6 class="text-xs md:text-xl text-white z-10">Florentino Pérez</h6>
+            </div>
+        </div>
+        <h1 class="uppercase font-semibold text-5xl m-10 text-center text-amber-400">Galerie</h1>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 w-full ">
+            <div class="relative overflow-hidden">
+                <img src="img/stadium-pic/1.jpg" class="transition-all ease duration-700 hover:scale-150" alt=""
+                onclick="showModal('img/stadium-pic/1.jpg')">
+            </div>
+            <div class="relative overflow-hidden">
+                <img src="img/stadium-pic/2.jpg" class="transition-all ease duration-700 hover:scale-150" alt=""
+                onclick="showModal('img/stadium-pic/2.jpg')">
+            </div>
+            <div class="relative overflow-hidden">
+                <img src="img/stadium-pic/3.jpg" class="transition-all ease duration-700 hover:scale-150" alt=""
+                onclick="showModal('img/stadium-pic/3.jpg')">
+            </div>
+            <div class="relative overflow-hidden">
+                <img src="img/stadium-pic/4.jpeg" class="transition-all ease duration-700 hover:scale-150" alt=""
+                onclick="showModal('img/stadium-pic/4.jpeg')">
+            </div>
+            <div class="relative overflow-hidden">
+                <img src="img/stadium-pic/5.jpg" class="transition-all ease duration-700 hover:scale-150" alt=""
+                onclick="showModal('img/stadium-pic/5.jpg')">
+            </div>
+            <div class="relative overflow-hidden">
+                <img src="img/stadium-pic/6.jpg" class="transition-all ease duration-700 hover:scale-150" alt=""
+                onclick="showModal('img/stadium-pic/6.jpg')">
+            </div>
+            <div class="relative overflow-hidden">
+                <img src="img/stadium-pic/7.jpg" class="transition-all ease duration-700 hover:scale-150" alt=""
+                onclick="showModal('img/stadium-pic/7.jpg')">
+            </div>
+            <div class="relative overflow-hidden">
+                <img src="img/stadium-pic/8.jpg" class="transition-all ease duration-700 hover:scale-150" alt=""
+                onclick="showModal('img/stadium-pic/8.jpg')">
+            </div>
+            <div class="relative overflow-hidden">
+                <img src="img/stadium-pic/9.jpg" class="transition-all ease duration-700 hover:scale-150" alt=""
+                onclick="showModal('img/stadium-pic/9.jpg')">
+            </div>
+
+            <div id="modal"
+                    class="hidden fixed transition-opacity ease-in duration-700 top-0 left-0 z-50 w-screen h-screen bg-black/70  justify-center items-center">
+
+                    <!-- The close button -->
+                    <a class="fixed z-50 top-7 right-8 text-white text-5xl font-bold cursor-pointer" href="javascript:void(0)"
+                    onclick="closeModal()">&times;</a>
+
+                    <!-- A big image will be displayed here -->
+                    <img id="modal-img" class="z-50 p-7 md:p-0 w-auto max-h-[600px] object-cover" />
+            </div>                                  
+
+            <div class="relative">
+                <img src="img/stadium-pic/10.jpg" alt="">
+                <div class="gradient absolute inset-0 hover:bg-gradient-to-t transition-all ease-out duration-700 after:bg-gradient-to-t from-[rgba(8,7,7,0.86)] to-[rgba(0,0,0,0.5)] after:absolute after:inset-0 content-overlay">
+                </div>
+                <h3 class="absolute -translate-x-2/4 -translate-y-2/4 left-2/4 top-2/4 text-bold text-xl text-gray-200 ">View more</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="fans" class="transition-all ease-in-out duration-700 relative py-24 h-auto container-custom mx-auto items-center px-5 lg:px-0">
+        <h1 class="uppercase font-semibold text-2xl">Tunisian madridista fans</h1>
+        <p class="text-gray-400">View Tunisian Madridista Fans +</p>   
+        
+        <main class="grid grid-cols-1 md:grid-cols-4">
+            <div class="md:col-span-1">
+                <h1 id="dropdownFans" class="uppercase font-semibold text-2xl m-10 mb-3 text-amber-400 cursor-pointer">Fans + <img src="img/fanMerchandise-pic/click-it.png" class="inline-flex w-16 animate-translateX -ml-3" alt="click-it"></h1>
+                <ul id="listFans" class="hidden ml-20">
+                    <li>
+                        <a class="text-black cursor-pointer">Fan Merchandise</a>
+                    </li>
+                    <li>
+                        <a class="text-black cursor-pointer">Quizzes</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hidden ease-in-out absolute -z-10 inset-0 bg-[url('img/fanMerchandise-pic/allStufs.png')] bg-contain bg-center opacity-10"></div> 
+            <div class="hidden stuffs-position" >
+                <img src="img/fanMerchandise-pic/bottle.png" alt="bottle" class="w-72 sm:w-40 absolute border-double border-4 border-black transition-all duration-200 ease-in-out">
+                <div class="absolute -ml-5 md:mt-6 md:-ml-3 w-72 h-80 sm:w-40 sm:h-56 rotate-180 hover:sm:w-48 hover:sm:h-48 border-double border-8 border-amber-400 transition-all duration-200 ease-in-out"></div>
+            </div>
+            <div class="hidden stuffs-position" >
+                <img src="img/fanMerchandise-pic/bottle.png" alt="bottle" class="w-72 sm:w-40 absolute border-double border-4 border-black transition-all duration-200 ease-in-out">
+                <div class="absolute -ml-5 md:mt-6 md:-ml-3 w-72 h-80 sm:w-40 sm:h-56 rotate-180 hover:sm:w-48 hover:sm:h-48 border-double border-8 border-amber-400 transition-all duration-200 ease-in-out"></div>
+            </div>
+            <div class="hidden stuffs-position" >
+                <img src="img/fanMerchandise-pic/glass-cup.png" alt="glass-cup" class="w-72 sm:w-52 absolute border-double border-4 border-black transition-all duration-200 ease-in-out">
+                <div class="absolute -ml-5 md:mt-0 md:ml-2 w-72 h-80 sm:w-40 sm:h-56 rotate-90 hover:sm:w-48 hover:sm:h-48 border-double border-8 border-amber-400 transition-all duration-200 ease-in-out"></div>
+            </div>
+            <div class="hidden stuffs-position" >
+                <img src="img/fanMerchandise-pic/spinnerKey.jpg" alt="spinnerKey" class="w-72 sm:w-40 absolute border-double border-4 border-black transition-all duration-200 ease-in-out">
+                <div class="absolute -ml-5 md:mt-6 md:-ml-3 w-72 h-80 sm:w-40 sm:h-56 rotate-180 hover:sm:w-48 hover:sm:h-48 border-double border-8 border-amber-400 transition-all duration-200 ease-in-out"></div>
+            </div>
+            <div class="hidden stuffs-position" >
+                <img src="img/fanMerchandise-pic/cup.png" alt="cup" class="w-72 sm:w-40 absolute border-double border-4 border-black transition-all duration-200 ease-in-out">
+                <div class="absolute -ml-1 md:mt-10 md:-ml-3 w-72 h-80 sm:w-40 sm:h-40 rotate-180 hover:sm:w-48 hover:sm:h-48 border-double border-8 border-amber-400 transition-all duration-200 ease-in-out"></div>
+            </div>
+            <div class="hidden stuffs-position" >
+                <img src="img/fanMerchandise-pic/cup.png" alt="cup" class="w-72 sm:w-40 absolute border-double border-4 border-black transition-all duration-200 ease-in-out">
+                <div class="absolute -ml-1 md:mt-10 md:-ml-3 w-72 h-80 sm:w-40 sm:h-40 rotate-180 hover:sm:w-48 hover:sm:h-48 border-double border-8 border-amber-400 transition-all duration-200 ease-in-out"></div>
+            </div>
+            <div class="hidden stuffs-position" >
+                <img src="img/fanMerchandise-pic/bowl.png" alt="bowl" class="w-72 sm:w-40 absolute border-double border-4 border-black transition-all duration-200 ease-in-out">
+                <div class="absolute -ml-5 md:mt-6 md:-ml-3 w-72 h-80 sm:w-40 sm:h-56 rotate-180 hover:sm:w-48 hover:sm:h-48 border-double border-8 border-amber-400 transition-all duration-200 ease-in-out"></div>
+            </div>
+            <div class="hidden stuffs-position" >
+                <img src="img/fanMerchandise-pic/bowl.png" alt="bowl" class="w-72 sm:w-40 absolute border-double border-4 border-black transition-all duration-200 ease-in-out">
+                <div class="absolute -ml-5 md:mt-6 md:-ml-3 w-72 h-80 sm:w-40 sm:h-56 rotate-180 hover:sm:w-48 hover:sm:h-40 border-double border-8 border-amber-400 transition-all duration-200 ease-in-out"></div>
+            </div>
+            <div class="hidden stuffs-position " >
+                <img src="img/fanMerchandise-pic/spinnerKey.jpg" alt="spinnerKey" class="w-72 sm:w-40 absolute border-double border-4 border-black transition-all duration-200 ease-in-out">
+                <div class="absolute -ml-5 md:mt-6 md:-ml-3 w-72 h-80 sm:w-40 sm:h-56 rotate-180 hover:sm:w-48 hover:sm:h-48 border-double border-8 border-amber-400 transition-all duration-200 ease-in-out"></div>
+            </div>
+            <div class="hidden stuffs-position" >
+                <img src="img/fanMerchandise-pic/spinnerKey.jpg" alt="spinnerKey" class="w-72 sm:w-40 absolute border-double border-4 border-black transition-all duration-200 ease-in-out">
+                <div class="absolute -ml-5 md:mt-6 md:-ml-3 w-72 h-80 sm:w-40 sm:h-56 rotate-180 hover:sm:w-48 hover:sm:h-48 border-double border-8 border-amber-400 transition-all duration-200 ease-in-out"></div>
+            </div>
+            <div class="hidden stuffs-position" >
+                <img src="img/fanMerchandise-pic/spinnerKey.jpg" alt="spinnerKey" class="w-72 sm:w-40 absolute border-double border-4 border-black transition-all duration-200 ease-in-out">
+                <div class="absolute -ml-5 md:mt-6 md:-ml-3 w-72 h-80 sm:w-40 sm:h-56 rotate-180 hover:sm:w-48 hover:sm:h-48 border-double border-8 border-amber-400 transition-all duration-200 ease-in-out"></div>
+            </div>
+            <div class="hidden absolute w-screen -z-10 inset-0 -start-14 sm:-start-28 md:-start-36 lg:-start-28 bg-[url('img/quizzes-pic/quiz-backg.png')] bg-contain bg-center opacity-10"></div> 
+            <div class="hidden md:col-span-3 lg:col-span-2 mt-16 md:mt-52 space-y-5 md:-ml-52 lg:ml-0">
+                <h1 id="question" class="relative font-semibold text-xl sm:text-2xl md:text-3xl text-center border-b border-gray-400 ">Question goes here ...</h1>
+                <div id="answer-btns" class="grid space-y-3">
+                    <button class="btn">Answer 1</button>
+                    <button class="btn">Answer 2</button>
+                    <button class="btn">Answer 3</button>
+                    <button class="btn">Answer 4</button>
+                </div>
+                <button id="next-btn" class="bg-amber-400 rounded-lg px-14 py-1 block mx-auto hover:bg-black hover:text-white">Next</button>
+            </div>
+        </main>
+
+
+    </section>
+
+    <section id="shop" class="transition-all ease-in-out duration-700 relative pt-24 pb-96 md:pb-72 h-auto container-custom mx-auto items-center px-5 lg:px-0">
+        <h1 class="uppercase font-semibold text-2xl">Shop</h1>
+        <p class="text-gray-400 mb-10">View shop +</p>
+        <div class="grid grid-cols-5 space-x-6">
+            <div class="hidden lg:block relative h-screen space-y-3 p-5 bg-gray-50 col-span-1">
+                <fieldset class="border-b border-gray-300 pb-3 space-y-1 font-semibold">
+                    <legend class="relative inset-0 uppercase font-bold text-base mb-2">category &#709;</legend>
+                        <div>
+                            <input id="Tracksuirts - Jackets - Gillets" type="checkbox" value="" checked class="w-4 h-4 rounded accent-amber-400">
+                            <label for="Tracksuirts - Jackets - Gillets" class="text-sm" >Tracksuirts - Jackets - Gillets</label>
+                        </div>
+                        <div>
+                            <input id="Hoodies - Sweatshirts - Pants" type="checkbox" value="" class="w-4 h-4 rounded accent-amber-400">
+                            <label for="Hoodies - Sweatshirts - Pants" class="text-sm">Hoodies - Sweatshirts - Pants</label>
+                        </div>
+                        <div>
+                            <input id="T-Shirts - Polos - Replica" type="checkbox" value="" class="w-4 h-4 rounded accent-amber-400">
+                            <label for="T-Shirts - Polos - Replica" class="text-sm" >T-Shirts - Polos - Replica</label>
+                        </div>
+                </fieldset>
+
+                <fieldset class="border-b border-gray-300 pb-3 space-y-1 font-semibold">
+                    <legend class="relative inset-0 uppercase font-bold text-base mb-2">Age group &#709;</legend>
+                        <div>
+                            <input id="Adults" type="checkbox" value="" class="w-4 h-4 rounded accent-amber-400">
+                            <label for="Adults" class="text-sm" >Adults</label>
+                        </div>
+                        <div>
+                            <input id="Kids" type="checkbox" value="" class="w-4 h-4 rounded accent-amber-400">
+                            <label for="Kids" class="text-sm" >Kids</label>
+                        </div>
+                </fieldset>
+
+                <fieldset class="border-b border-gray-300 pb-3 space-y-1 font-semibold">
+                    <legend class="relative inset-0 uppercase font-bold text-base mb-2">Price &#709;</legend>
+                    <div>
+
+                        <label for="default-range" class="block mb-2 text-sm font-medium"></label>
+                        <input id="default-range" type="range" value="50" class="w-full h-1 rounded-lg appearance-none accent-slate-950 cursor-pointer dark:bg-amber-400">
+                    </div>
+                </fieldset>
+            </div>
+            <div class="block col-span-full lg:col-span-4 space-y-5">
+                <div class="relative w-full h-10 flex justify-between items-center bg-gray-50 ">
+                    <div class="group">
+                        <h6 class="cursor-pointer" data-dropdown-toggle="dropdownSort"><b>Sort:</b> Price Descending &#709;</h6>
+                    </div>
+                    <h5>Showing 1-1 of 1 results</h5>
+                </div>
+                <div id="dropdownSort" class="hidden relative z-20 pl-10 bg-white rounded-md">
+                        <option value="Product name: A to Z" class="cursor-pointer hover:text-white hover:bg-amber-400 w-full px-5">Product name: A to Z</option>
+                        <option value="Product name: Z to A" class="cursor-pointer hover:text-white hover:bg-amber-400 w-full px-5">Product name: Z to A</option>
+                        <option value="Lowest price" class="cursor-pointer hover:text-white hover:bg-amber-400 w-full px-5">Lowest price</option>
+                        <option value="Highest price" class="cursor-pointer hover:text-white hover:bg-amber-400 w-full px-5" selected="">Highest price</option>
+                        <option value="Products in stock" class="cursor-pointer hover:text-white hover:bg-amber-400 w-full px-5">Products in stock</option>
+                        <option value="Lowest reference" class="cursor-pointer hover:text-white hover:bg-amber-400 w-full px-5">Lowest reference</option>
+                        <option value="Highest reference" class="cursor-pointer hover:text-white hover:bg-amber-400 w-full px-5">Highest reference</option>
+                </div>
+
+                <div class="h-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                    <div id="pic-jacket" class="bg-gray-50 relative p-5 overflow-hidden">
+                        <div class="relative overflow-hidden">
+                            <img src="img/shop-pic/veste1.png" class="shop-item-image transition-all ease-out duration-700 transform hover:scale-105" alt="veste" >
+                        </div>
+                        <span class="absolute top-0 start-0 mt-8 bg-amber-400 px-2 uppercase">-25% off</span>
+                        <h2 class="shop-item-title font-semibold text-xl">Jacket</h2>
+                        <div class="flex items-center space-x-1">
+                            <svg class="w-4 h-4 text-amber-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-amber-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-amber-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-amber-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-gray-300 dark:text-gray-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                        </div>
+                        <b class="shop-item-price">$120.00</b>
+                        <span class="shop-item-button absolute bottom-5 end-5 text-3xl border rounded-lg border-amber-400 text-amber-400 px-2 cursor-pointer">&#43;</span>
+                    </div>
+                    <div id="pic-jacket" class="bg-gray-50 relative p-5 overflow-hidden">
+                        <div class="relative overflow-hidden">
+                            <img src="img/shop-pic/veste1.png" class="shop-item-image transition-all ease-out duration-700 transform hover:scale-105" alt="veste" >
+                        </div>
+                        <span class="absolute top-0 start-0 mt-8 bg-amber-400 px-2 uppercase">-25% off</span>
+                        <h2 class="shop-item-title font-semibold text-xl">Jacket</h2>
+                        <div class="flex items-center space-x-1">
+                            <svg class="w-4 h-4 text-amber-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-amber-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-amber-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-amber-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-gray-300 dark:text-gray-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                        </div>
+                        <b class="shop-item-price">$120.00</b>
+                        <span class="shop-item-button absolute bottom-5 end-5 text-3xl border rounded-lg border-amber-400 text-amber-400 px-2 cursor-pointer">&#43;</span>
+                    </div>
+                    <div id="pic-jacket" class="bg-gray-50 relative p-5 overflow-hidden">
+                        <div class="relative overflow-hidden">
+                            <img src="img/shop-pic/veste1.png" class="shop-item-image transition-all ease-out duration-700 transform hover:scale-105" alt="veste" >
+                        </div>
+                        <span class="absolute top-0 start-0 mt-8 bg-amber-400 px-2 uppercase">-25% off</span>
+                        <h2 class="shop-item-title font-semibold text-xl">Jacket</h2>
+                        <div class="flex items-center space-x-1">
+                            <svg class="w-4 h-4 text-amber-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-amber-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-amber-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-amber-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-gray-300 dark:text-gray-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                        </div>
+                        <b class="shop-item-price">$120.00</b>
+                        <span class="shop-item-button absolute bottom-5 end-5 text-3xl border rounded-lg border-amber-400 text-amber-400 px-2 cursor-pointer">&#43;</span>
+                    </div>
+                    <div id="pic-jacket" class="bg-gray-50 relative p-5 overflow-hidden">
+                        <div class="relative overflow-hidden">
+                            <img src="img/shop-pic/veste1.png" class="shop-item-image transition-all ease-out duration-700 transform hover:scale-105" alt="veste" >
+                        </div>
+                        <span class="absolute top-0 start-0 mt-8 bg-amber-400 px-2 uppercase">-25% off</span>
+                        <h2 class="shop-item-title font-semibold text-xl">Jacket</h2>
+                        <div class="flex items-center space-x-1">
+                            <svg class="w-4 h-4 text-amber-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-amber-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-amber-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-amber-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-gray-300 dark:text-gray-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                        </div>
+                        <b class="shop-item-price">$120.00</b>
+                        <span class="shop-item-button absolute bottom-5 end-5 text-3xl border rounded-lg border-amber-400 text-amber-400 px-2 cursor-pointer">&#43;</span>
+                    </div>
+                    <div id="pic-jacket" class="bg-gray-50 relative p-5 overflow-hidden">
+                        <div class="relative overflow-hidden">
+                            <img src="img/shop-pic/veste1.png" class="shop-item-image transition-all ease-out duration-700 transform hover:scale-105" alt="veste" >
+                        </div>
+                        <span class="absolute top-0 start-0 mt-8 bg-amber-400 px-2 uppercase">-25% off</span>
+                        <h2 class="shop-item-title font-semibold text-xl">Jacket</h2>
+                        <div class="flex items-center space-x-1">
+                            <svg class="w-4 h-4 text-amber-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-amber-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-amber-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-amber-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-gray-300 dark:text-gray-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                        </div>
+                        <b class="shop-item-price">$120.00</b>
+                        <span class="shop-item-button absolute bottom-5 end-5 text-3xl border rounded-lg border-amber-400 text-amber-400 px-2 cursor-pointer">&#43;</span>
+                    </div>
+                    <div id="pic-jacket" class="bg-gray-50 relative p-5 overflow-hidden">
+                        <div class="relative overflow-hidden">
+                            <img src="img/shop-pic/veste1.png" class="shop-item-image transition-all ease-out duration-700 transform hover:scale-105" alt="veste" >
+                        </div>
+                        <span class="absolute top-0 start-0 mt-8 bg-amber-400 px-2 uppercase">-25% off</span>
+                        <h2 class="shop-item-title font-semibold text-xl">Jacket</h2>
+                        <div class="flex items-center space-x-1">
+                            <svg class="w-4 h-4 text-amber-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-amber-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-amber-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-amber-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-gray-300 dark:text-gray-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                        </div>
+                        <b class="shop-item-price">$120.00</b>
+                        <span class="shop-item-button absolute bottom-5 end-5 text-3xl border rounded-lg border-amber-400 text-amber-400 px-2 cursor-pointer">&#43;</span>
+                    </div>
+                    <div id="pic-jacket" class="bg-gray-50 relative p-5 overflow-hidden">
+                        <div class="relative overflow-hidden">
+                            <img src="img/shop-pic/veste1.png" class="shop-item-image transition-all ease-out duration-700 transform hover:scale-105" alt="veste" >
+                        </div>
+                        <span class="absolute top-0 start-0 mt-8 bg-amber-400 px-2 uppercase">-25% off</span>
+                        <h2 class="shop-item-title font-semibold text-xl">Jacket</h2>
+                        <div class="flex items-center space-x-1">
+                            <svg class="w-4 h-4 text-amber-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-amber-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-amber-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-amber-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-gray-300 dark:text-gray-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                        </div>
+                        <b class="shop-item-price">$120.00</b>
+                        <span class="shop-item-button absolute bottom-5 end-5 text-3xl border rounded-lg border-amber-400 text-amber-400 px-2 cursor-pointer">&#43;</span>
+                    </div>
+                    <div id="pic-jacket" class="bg-gray-50 relative p-5 overflow-hidden">
+                        <div class="relative overflow-hidden">
+                            <img src="img/shop-pic/veste1.png" class="shop-item-image transition-all ease-out duration-700 transform hover:scale-105" alt="veste" >
+                        </div>
+                        <span class="absolute top-0 start-0 mt-8 bg-amber-400 px-2 uppercase">-25% off</span>
+                        <h2 class="shop-item-title font-semibold text-xl">Jacket</h2>
+                        <div class="flex items-center space-x-1">
+                            <svg class="w-4 h-4 text-amber-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-amber-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-amber-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-amber-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-gray-300 dark:text-gray-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                        </div>
+                        <b class="shop-item-price">$120.00</b>
+                        <span class="shop-item-button absolute bottom-5 end-5 text-3xl border rounded-lg border-amber-400 text-amber-400 px-2 cursor-pointer">&#43;</span>
+                    </div>
+                    <div id="pic-jacket" class="bg-gray-50 relative p-5 overflow-hidden">
+                        <div class="relative overflow-hidden">
+                            <img src="img/shop-pic/veste1.png" class="shop-item-image transition-all ease-out duration-700 transform hover:scale-105" alt="veste" >
+                        </div>
+                        <span class="absolute top-0 start-0 mt-8 bg-amber-400 px-2 uppercase">-25% off</span>
+                        <h2 class="shop-item-title font-semibold text-xl">Jacket</h2>
+                        <div class="flex items-center space-x-1">
+                            <svg class="w-4 h-4 text-amber-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-amber-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-amber-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-amber-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-gray-300 dark:text-gray-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                        </div>
+                        <b class="shop-item-price">$120.00</b>
+                        <span class="shop-item-button absolute bottom-5 end-5 text-3xl border rounded-lg border-amber-400 text-amber-400 px-2 cursor-pointer">&#43;</span>
+                    </div>
+
+
+                </div>
+                <div class="block mx-auto relative border border-slate-400 lg:w-9/12 space-y-5 p-5 rounded-md">
+                    <div class="full flex justify-between">
+                        <h6>Shopping Cart</h6>
+                        <button class="remove-all text-red-600 underline text-sm cursor-pointer">Remove all</button>
+                    </div>
+                    <div class="cart-items">
+                        <!-- items will be added by clicked -->
+                    </div>
+                    <div class="flex w-full justify-end items-center border-t border-gray-400">
+                        <div class="row grid gap-3 mt-2">
+                            <div class="flex justify-between items-center">
+                                <div class="sub-total">
+                                    <h6 class="font-semibold">Sub-Total</h6>
+                                    <p class="num-items text-gray-400 text-sm"></p>
+                                </div>
+                                <span class="cart-total-price font-bold text-2xl">$0</span>
+                            </div>
+                            <button class="btn-purchase capitalize rounded-full text-sm font-bold bg-amber-400 py-1 px-12">Checkout</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="bg-amber-400 lg:bg-transparent transition-all ease-in-out duration-700 mx-auto relative h-auto items-end ">
+        <div class="hidden lg:block relative rotate-90 lg:rotate-0 h-full w-full lg:h-120 bottom-0 left-0 right-0 bg-[url('img/contact-pic/contact1-bg.png')] bg-cover bg-center "></div>
+        <footer class="grid grid-cols-1 lg:grid-cols-2">
+            <div class="relative lg:absolute bottom-0 lg:top-52 xl:top-64 space-y-10 space-x-5 py-20 px-24 pt-72 md:pt-20  lg:pt-0">
+                <div class="grid grid-cols-1 lg:grid-cols-3 space-y-5 lg:space-y-0 ">
+                    <div class="lg:border-r lg:border-gray-200 px-5 space-y-3">
+                        <h1 class="font-bold uppercase text-xl border-b-4 border-white ">Our club</h1>
+                        <div class="inline-grid">
+                            <h6 class="cursor-pointer hover:font-bold">About Us</h6>
+                            <h6 class="cursor-pointer hover:font-bold">History</h6>
+                            <h6 class="cursor-pointer hover:font-bold">Membership</h6>
+                            <h6 class="cursor-pointer hover:font-bold">Events</h6>
+                            <h6 class="cursor-pointer hover:font-bold">Contact</h6>
+                        </div>
+                    </div>
+                    <div class="lg:border-r lg:border-gray-200 px-5 space-y-3">
+                        <h1 class="font-bold uppercase text-xl border-b-4 border-white ">App store</h1>
+                        <div class="inline-grid">
+                            <h6 class="cursor-pointer hover:font-bold">Download</h6>
+                            <h6 class="cursor-pointer hover:font-bold">News</h6>
+                            <h6 class="cursor-pointer hover:font-bold">Reviews</h6>
+                            <h6 class="cursor-pointer hover:font-bold">Support</h6>
+                            <h6 class="cursor-pointer hover:font-bold">FAQ</h6>
+
+                        </div>
+                    </div>
+                    <div class="px-5 space-y-3">
+                        <h1 class="font-bold uppercase text-xl border-b-4 border-white ">Our app</h1>
+                        <div class="inline-grid">
+                            <h6 class="cursor-pointer hover:font-bold">Features</h6>
+                            <h6 class="cursor-pointer hover:font-bold">How It Works</h6>
+                            <h6 class="cursor-pointer hover:font-bold">Compatibility</h6>
+                            <h6 class="cursor-pointer hover:font-bold">Updates</h6>
+                            <h6 class="cursor-pointer hover:font-bold">Feedback</h6>
+                        </div>
+                    </div>      
+                </div>
+                <div class="lg:absolute space-y-3">
+                    <img src="img/logos/main-logo.png" class="h-9 lg:h-12 mr-3 grayscale" alt="Tunisian-Madridista-logo">
+                    <p class="w-full ">The "Tunisian Madridista" website stands as a vibrant online community that unites devoted fans of Real Madrid Football Club from Tunisia.
+                        This platform serves as a digital haven where Tunisian enthusiasts of the iconic Spanish football club can come together to share their passion,
+                        exchange insights.</p>
+                    <b>Tunisianmadridista@contact.tn</b>
+                </div>
+            </div>
+
+            <div>
+                <div class="absolute start-10 w-auto md:start-auto md:w-96 h-auto -top-72 md:-top-20 end-10 lg:end-28 bg-white border border-amber-400 p-5 text-center space-y-10">
+                    <h2 class="font-bold text-2xl">Get in touch</h2>
+                    <form name="submit-to-google-sheet" class="space-y-5">
+                    <div class="relative inputs space-y-6 md:space-y-8">
+                        <div class="relative">
+                            <input type="text" name="First Name" id="firstName" class="realtive cursor-text border-b border-gray-300 focus:outline-none focus:border-amber-400 focus:border-b-2 transition-colors w-full peer">
+                            <label for="firstName" class="absolute start-0 -top-1 cursor-text text-gray-400 peer-focus:text-amber-400 peer-focus:text-sm peer-focus:-top-5 transition-all">First name</label>
+                        </div>
+                        <div class="relative">
+                            <input type="text" name="Last Name" id="lastName" class="realtive cursor-text border-b border-gray-300 focus:outline-none focus:border-amber-400 focus:border-b-2 transition-colors w-full peer">
+                            <label for="lastName" class="absolute start-0 -top-1 cursor-text text-gray-400 peer-focus:text-amber-400 peer-focus:text-sm peer-focus:-top-5 transition-all">Last name</label>
+                        </div>
+                        <div class="relative">
+                            <input type="email" name="Email" id="email" class="realtive cursor-text border-b border-gray-300 focus:outline-none focus:border-amber-400 focus:border-b-2 transition-colors w-full peer">
+                            <label for="email" class="absolute start-0 -top-1 cursor-text text-gray-400 peer-focus:text-amber-400 peer-focus:text-sm peer-focus:-top-5 transition-all">Your email</label>
+                        </div>
+                        <div class="relative">
+                            <input type="text" name="Phone" id="phone" class="realtive cursor-text border-b border-gray-300 focus:outline-none focus:border-amber-400 focus:border-b-2 transition-colors w-full peer">
+                            <label for="phone" class="absolute start-0 -top-1 cursor-text text-gray-400 peer-focus:text-amber-400 peer-focus:text-sm peer-focus:-top-5 transition-all">Phone number</label>    
+                        </div>
+                        <div class="relative">
+                            <textarea id="message" name="Message" cols="41" rows="5" class="realtive cursor-text w-full lg:w-auto border-b border-gray-300 focus:outline-none focus:border-amber-400 focus:border-b-2 transition-colors peer"></textarea>
+                            <label for="message" class="absolute start-0 -top-1 cursor-text text-gray-400 peer-focus:text-amber-400 peer-focus:text-sm peer-focus:-top-5 transition-all">Message (optional)</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="bg-amber-400 px-6 py-2 text-white hover:bg-amber-500 hover:text-black capitalize rounded-md text-xl">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+                <div class="social-media absolute start-5 lg:start-auto lg:end-10 top-52 lg:top-52 block space-y-4">
+                    <div class="border-l-4 border-white h-24 w-0 mx-auto mt-10 "></div>
+                    <svg class="cursor-pointer hover:fill-gray-700 transition-colors" width="50" height="40" fill="#ffffff" viewBox="0 0 512 512" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M480,257.35c0-123.7-100.3-224-224-224s-224,100.3-224,224c0,111.8,81.9,204.47,189,221.29V322.12H164.11V257.35H221V208c0-56.13,33.45-87.16,84.61-87.16,24.51,0,50.15,4.38,50.15,4.38v55.13H327.5c-27.81,0-36.51,17.26-36.51,35v42h62.12l-9.92,64.77H291V478.66C398.1,461.85,480,369.18,480,257.35Z" fill-rule="evenodd"></path></g></svg>
+                    <svg class="cursor-pointer hover:fill-gray-700 transition-colors" width="50" height="40" fill="#ffffff" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-143 145 512 512" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M215.2,361.2 c0.1,2.2,0.1,4.5,0.1,6.8c0,69.5-52.9,149.7-149.7,149.7c-29.7,0-57.4-8.7-80.6-23.6c4.1,0.5,8.3,0.7,12.6,0.7 c24.6,0,47.3-8.4,65.3-22.5c-23-0.4-42.5-15.6-49.1-36.5c3.2,0.6,6.5,0.9,9.9,0.9c4.8,0,9.5-0.6,13.9-1.9 C13.5,430-4.6,408.7-4.6,383.2v-0.6c7.1,3.9,15.2,6.3,23.8,6.6c-14.1-9.4-23.4-25.6-23.4-43.8c0-9.6,2.6-18.7,7.1-26.5 c26,31.9,64.7,52.8,108.4,55c-0.9-3.8-1.4-7.8-1.4-12c0-29,23.6-52.6,52.6-52.6c15.1,0,28.8,6.4,38.4,16.6 c12-2.4,23.2-6.7,33.4-12.8c-3.9,12.3-12.3,22.6-23.1,29.1c10.6-1.3,20.8-4.1,30.2-8.3C234.4,344.5,225.5,353.7,215.2,361.2z"></path> </g></svg>
+                    <svg class="cursor-pointer hover:fill-gray-700 transition-colors" width="50" height="40" fill="#ffffff" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-143 145 512 512" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M113,446c24.8,0,45.1-20.2,45.1-45.1c0-9.8-3.2-18.9-8.5-26.3c-8.2-11.3-21.5-18.8-36.5-18.8s-28.3,7.4-36.5,18.8 c-5.3,7.4-8.5,16.5-8.5,26.3C68,425.8,88.2,446,113,446z"></path> <polygon points="211.4,345.9 211.4,308.1 211.4,302.5 205.8,302.5 168,302.6 168.2,346 "></polygon> <path d="M183,401c0,38.6-31.4,70-70,70c-38.6,0-70-31.4-70-70c0-9.3,1.9-18.2,5.2-26.3H10v104.8C10,493,21,504,34.5,504h157 c13.5,0,24.5-11,24.5-24.5V374.7h-38.2C181.2,382.8,183,391.7,183,401z"></path> <path d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M241,374.7v104.8 c0,27.3-22.2,49.5-49.5,49.5h-157C7.2,529-15,506.8-15,479.5V374.7v-52.3c0-27.3,22.2-49.5,49.5-49.5h157 c27.3,0,49.5,22.2,49.5,49.5V374.7z"></path> </g> </g></svg>
+                    <svg class="cursor-pointer hover:fill-gray-700 transition-colors" width="50" height="40" fill="#ffffff" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-143 145 512 512" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <polygon points="78.9,450.3 162.7,401.1 78.9,351.9 "></polygon> <path d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M241,446.8L241,446.8 c0,44.1-44.1,44.1-44.1,44.1H29.1c-44.1,0-44.1-44.1-44.1-44.1v-91.5c0-44.1,44.1-44.1,44.1-44.1h167.8c44.1,0,44.1,44.1,44.1,44.1 V446.8z"></path> </g> </g></svg>
+                    <div class="border-l-4 border-white h-24 w-0 mx-auto mt-10 "></div>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+    <script src="script.js" required async></script>
+
+</body>
+</html>
